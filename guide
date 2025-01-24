@@ -1,0 +1,22 @@
+Cloud:
+http://localhost:8910/eureka-ui
+
+Call postman api :
+Web backend:
+http://localhost:8986/web/webview/webview-back-end/pingWebCore
+Web core:
+http://localhost:59550/service/core-api-service/account/v1/pingAvailable
+
+Web view:
+User = "admin";
+Pass = "admin_123a@";
+http://localhost:8986/web/webview/login
+http://localhost:8986/web/webview/menu
+http://localhost:8986/web/webview/index
+
+
+Swagger
+Web core:
+http://localhost:59550/swagger-ui/index.html
+Web backend:
+http://localhost:8986/web/webview/swagger-ui/index.html
