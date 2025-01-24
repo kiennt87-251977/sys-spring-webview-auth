@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/login.css">
+    <script type="text/javascript" src="../webview/static/js/Base64.js"></script>
+    <script type="text/javascript" src="../webview/static/js/login.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/default.css">
+    <link rel="stylesheet" href="/web/webview/static/css/menu.css">
+    <script type="text/javascript" src="../webview/static/js/utils.js"></script>
+    <script type="text/javascript" src="../webview/static/js/menu.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="path-api hidden" th:text="${UrlPath}"/>
+
+<div style="position: absolute; right: 2%; top: 3%; display: flex;">
+    <div id="content-btn-login">
+    </div>
+
+    <!--<img id="img-web-logo" width="220" height="277" src="../ewallet-webview/static/img/viettel_log.png"-->
+    <!--alt="The Scream"-->
+    <!--style="display: none">-->
+    <!--<div>-->
+    <!--<canvas id="canvas-web-logo" width="100" height="100"></canvas>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<canvas id="vietnam-flag" width="100" height="60" style="margin-top: 20%; margin-left: 10%;"></canvas>-->
+    <!--</div>-->
+</div>
+<div>
+    <div id="modal-login" class="modal">
+    </div>
+
+    <div id="modal-detail" class="modal">
+    </div>
+
+    <div id="modal-success" class="modal">
+    </div>
+
+    <div id="modal-logout-success" class="modal">
+    </div>
+
+    <div id="modal-fail" class="modal">
+    </div>
+
+    <div id="modal-help" class="modal">
+    </div>
+</div>
+
+<div class="title-pane">
+    <div class="left" style="display: list-item ;padding: 1%;">
+    </div>
+    <div class="right" style="width: 95%; text-align: center">
+        <h1 class="text">Menu</h1>
+    </div>
+</div>
+
+
+<div class="menu-pane content-pane panel-01">
+
+    <div class="left menu-list">
+        <p class="text"> Chart Acc</p>
+        <button type="button" class="btn btn-primary" onclick="menuClick(this)" value="webview_acc_chart"><i
+                class="fa fa-bars"></i>
+            Chart
+        </button>
+    </div>
+
+    <div class="center menu-list">
+        <p class="text"> Table Acc</p>
+        <button type="button" class="btn btn-primary" onclick="menuClick(this)" value="webview_acc_table"><i
+                class="fa fa-bars"></i>
+            Table
+        </button>
+    </div>
+
+    <!--<div class="right menu-list ">-->
+    <!--<p class="text">PDF view</p>-->
+    <!--<button type="button" class="btn btn-primary" onclick="menuClick(this)" value="webview_pdf_view">-->
+    <!--<i class="fa fa-bars"></i>-->
+    <!--PDF view-->
+    <!--</button>-->
+    <!--</div>-->
+
+    <div class="right menu-list ">
+        <p class="text">File view</p>
+        <button type="button" class="btn btn-primary" onclick="menuClick(this)" value="webview_file_view">
+            <i class="fa fa-bars"></i>
+            File view
+        </button>
+    </div>
+
+</div>
+
+
+</body>
+</html>

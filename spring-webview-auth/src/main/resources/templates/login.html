@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/default.css">
+    <script type="text/javascript" src="../webview/static/js/utils.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/login.css">
+    <script type="text/javascript" src="../webview/static/js/Base64.js"></script>
+    <script type="text/javascript" src="../webview/static/js/login.js"></script>
+
+
+</head>
+
+
+<body>
+<div class="path-api hidden" th:text="${UrlPath}"/>
+
+<div class="title-pane">
+    <div class="left" style="display: list-item ;padding: 1%;">
+        <button type="button" class="btn" onclick="menuClick(this)" value="menu"><i class="fa fa-home"></i></button>
+    </div>
+    <div class="right" style="width: 95%; text-align: center">
+        <h1 class="text">Login</h1>
+    </div>
+</div>
+
+<div style="position: absolute; right: 2%; top: 3%; display: flex;">
+    <div id="content-btn-login">
+    </div>
+</div>
+
+<div>
+    <div id="modal-login" class="modal">
+    </div>
+
+    <div id="modal-detail" class="modal">
+    </div>
+
+    <div id="modal-success" class="modal">
+    </div>
+
+    <div id="modal-logout-success" class="modal">
+    </div>
+
+    <div id="modal-fail" class="modal">
+    </div>
+
+    <div id="modal-help" class="modal">
+    </div>
+</div>
+
+<div class="content-pane">
+
+    <div class="content" style="  width: 100%;    padding: 10%;text-align: center">
+        <div style="display: flex; padding: 1%"><p>Welcom to private web CV</p></div>
+        <div style="display: flex; padding: 1%"><p>Nom : </p>
+            <p>1234</p></div>
+        <div style="display: flex; padding: 1%"><p>Prenom : </p>
+            <p>tssd</p></div>
+    </div>
+</div>
+
+</body>
+</html>

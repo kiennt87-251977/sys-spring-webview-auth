@@ -1,0 +1,17 @@
+.menu-pane{
+    margin: auto;
+    display:flex;
+    border: 1px solid #000000;
+    margin: 2%;
+    padding: 2%;
+}
+
+.menu-list{
+    display: list-item ;
+    width: 25%;
+    padding: 1%;
+}
+
+.menu-inavailable button{
+   background-color: rgba(114, 143, 180, 0.44) !important;
+}

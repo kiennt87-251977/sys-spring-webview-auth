@@ -1,0 +1,37 @@
+
+
+.content-success, .content-fail {
+    margin-top: 2%;
+}
+
+.content-success .content-table, .content-fail .content-table {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.content-success .text, .content-fail .text {
+    font-size: x-large;
+}
+
+.content-fail .text {
+    color: red;
+}
+
+.name {
+    border: thick;
+}
+
+.content-elem {
+    border: 1px solid cadetblue;
+    display: flex;
+}
+
+.content-value {
+    display: flex;
+    color: black !important;
+}
+
+
+
+
+

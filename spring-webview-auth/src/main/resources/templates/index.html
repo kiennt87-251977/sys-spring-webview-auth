@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/style.css">
+    <script type="text/javascript" src="../webview/static/js/utils.js"></script>
+    <script type="text/javascript" src="../webview/static/js/index.js"></script>
+
+
+</head>
+
+<body>
+<div class="path-api hidden" th:text="${UrlPath}"/>
+
+
+<div style="position: absolute; right: 2%; top: 3%; display: flex;">
+
+    <img id="img-viettel-logo" width="220" height="277" src="../ewallet-webview/static/img/viettel_log_02.png"
+         alt="The Scream"
+         style="display: none">
+    <!--<div>-->
+    <!--<canvas id="canvas-web-logo" width="100" height="100"></canvas>-->
+    <!--</div>-->
+    <div>
+        <canvas id="vietnam-flag" width="100" height="60" style="margin-top: 20%; margin-left: 10%;"></canvas>
+    </div>
+</div>
+
+
+<div class="content-title-pane">
+    <div class="title-pane">
+        <canvas id="canvas-title-pane" width="320" height="200" style=""></canvas>
+    </div>
+
+
+</div>
+
+<div class="content-btn-pane">
+    <button type="button" class="btn btn-primary btn-home" onclick="menuClick(this)" value="menu"><i
+            class="fa fa-home"></i>
+        Home
+    </button>
+</div>
+
+
+</body>
+</html>

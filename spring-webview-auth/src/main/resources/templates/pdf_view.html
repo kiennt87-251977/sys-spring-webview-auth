@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/login.css">
+    <script type="text/javascript" src="../webview/static/js/Base64.js"></script>
+    <script type="text/javascript" src="../webview/static/js/login.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/default.css">
+    <link rel="stylesheet" href="/web/webview/static/css/pdf_view.css">
+    <script type="text/javascript" src="../webview/static/js/utils.js"></script>
+    <script type="text/javascript" src="../webview/static/js/pdf_view.js"></script>
+
+    <script type="text/javascript" src="../webview/static/js/save_file.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="path-api hidden" th:text="${UrlPath}"/>
+<div class="relation-trans-id hidden" th:text="${TransId}"/>
+
+
+<div style="position: absolute; right: 2%; top: 3%; display: flex;">
+    <div id="content-btn-login">
+    </div>
+
+    <!--<img id="img-web-logo" width="220" height="277" src="../ewallet-webview/static/img/viettel_log.png"-->
+    <!--alt="The Scream"-->
+    <!--style="display: none">-->
+    <!--<div>-->
+    <!--<canvas id="canvas-web-logo" width="100" height="100"></canvas>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<canvas id="vietnam-flag" width="100" height="60" style="margin-top: 20%; margin-left: 10%;"></canvas>-->
+    <!--</div>-->
+</div>
+<div>
+    <div id="modal-login" class="modal">
+    </div>
+
+    <div id="modal-detail" class="modal">
+    </div>
+
+    <div id="modal-success" class="modal">
+    </div>
+
+    <div id="modal-logout-success" class="modal">
+    </div>
+
+    <div id="modal-fail" class="modal">
+    </div>
+
+    <div id="modal-help" class="modal">
+    </div>
+</div>
+
+<div class="title-pane">
+    <div class="left" style="display: list-item ;padding: 1%;">
+        <button type="button" class="btn" onclick="menuClick(this)" value="menu"><i class="fa fa-home"></i></button>
+    </div>
+    <div class="right" style="width: 95%; text-align: center">
+        <h1 class="text">PDF view</h1>
+    </div>
+</div>
+
+
+<div class="content-pane">
+    <div class="sub-content-pane line-01" style="padding: 1%">
+        <form enctype="multipart/form-data" action="/upload-file" method="post">
+            <input type="file" class="btn" id="input-file-form" name="filename"
+                   style="margin-bottom:10px; padding: 20px 16px; font-size: 16px; cursor: pointer;background-color: coral;">
+            <!--<input type="submit" value="Save" style="padding: 5px 16px; font-size: 16px; border-radius: 10px;">-->
+            <button type="button" class="btn" style="background-color: burlywood;" onclick="saveFile(this)">Submit<i
+                    class="fa"></i></button>
+        </form>
+        <div id="modal-save-file" class="modal">
+        </div>
+    </div>
+
+
+    <div class="sub-content-pane line-02" style="padding: 1%">
+        <embed id="embed-id" type="application/pdf" class="view-pdf">
+
+        <!--<object data="/web/webview/static/file/pdf_file_cv.pdf"-->
+        <!--type="application/pdf" class="view-pdf">-->
+        <!--<p>Unable to display PDF file. <a href="/web/webview/static/file/pdf_file_cv.pdf">Download</a> instead.</p>-->
+        <!--</object>-->
+
+        <!--<object data="http://infolab.stanford.edu/pub/papers/google.pdf"-->
+        <!--type="application/pdf" class="view-pdf">-->
+        <!--<p>Unable to display PDF file. <a href="http://infolab.stanford.edu/pub/papers/google.pdf">Download</a>-->
+        <!--instead.</p>-->
+        <!--</object>-->
+
+        <!--<iframe-->
+        <!--src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0"-->
+        <!--frameBorder="0"-->
+        <!--scrolling="auto"-->
+        <!--height="700px"-->
+        <!--width="100%"-->
+        <!--&gt;</iframe>-->
+    </div>
+
+
+</div>
+
+</body>
+</html>

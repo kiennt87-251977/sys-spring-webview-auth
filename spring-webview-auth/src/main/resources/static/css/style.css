@@ -1,0 +1,169 @@
+
+.content-title-pane {
+    width: 100%;
+    height: 500px;
+    padding-left: 35%;
+    padding-top: 10%;
+
+}
+
+.title-pane {
+    width: 350px;
+    height: 220px;
+    border-radius: 17px;
+    padding: 1%;
+    /*background-color: rgba(255, 0, 0, 0.21);*/
+    position: relative;
+    animation-name: title-animation;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes title-animation {
+    0% {
+        background-color: rgba(255, 0, 0, 0.2);
+        left: 0px;
+        top: 0px;
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+    }
+    25% {
+        background-color: rgba(255, 255, 0, 0.2);
+        left: 200px;
+        top: 0px;
+        transform: rotateX(90deg);
+        transform: rotateY(90deg);
+    }
+    50% {
+        background-color: rgba(0, 0, 255, 0.21);
+        left: 200px;
+        top: 200px;
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+    }
+    75% {
+        background-color: rgba(0, 128, 0, 0.2);
+        left: 0px;
+        top: 200px;
+        transform: rotateX(270deg);
+        transform: rotateY(270deg);
+    }
+
+    100% {
+        background-color: rgba(360, 0, 0, 0.2);
+        left: 0px;
+        top: 0px;
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+    }
+}
+
+.btn-home {
+    opacity: 0%;
+    position: relative;
+    animation-name: btn-home-animation;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+}
+
+@keyframes btn-home-animation {
+    0% {
+        left: 100px;
+        /*top: 0px;*/
+        opacity: 0%;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        left: 90%;
+        /*top: 0px;*/
+        opacity: 40%;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 60%;
+        transform: rotate(0deg);
+        font-size: 14px;
+    }
+
+    30% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 80%;
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+
+    40% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        background-color: DodgerBlue;
+        font-size: 14px;
+    }
+
+    50% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        background-color: #ffa600;
+        transform: rotateX(90deg);
+        font-size: 20px;
+    }
+
+    55% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        background-color: #7f247c;
+        transform: rotateX(180deg);
+        font-size: 14px;
+    }
+
+    60% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        background-color: #ffa600;
+        transform: rotateX(270deg);
+        font-size: 20px;
+    }
+
+    65% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        background-color: #7f247c;
+        transform: rotateX(360deg);
+        font-size: 14px;
+    }
+
+    70% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        background-color: #ffa600;
+        transform: rotateX(0deg);
+        font-size: 20px;
+    }
+
+    100% {
+        left: 200px;
+        /*top: 0px;*/
+        opacity: 100%;
+        transform: rotate(360deg);
+        font-size: 14px;
+    }
+
+}

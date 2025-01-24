@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/login.css">
+    <script type="text/javascript" src="../webview/static/js/Base64.js"></script>
+    <script type="text/javascript" src="../webview/static/js/login.js"></script>
+
+    <link rel="stylesheet" href="/web/webview/static/css/default.css">
+    <link rel="stylesheet" href="/web/webview/static/css/acc_table.css">
+    <script type="text/javascript" src="../webview/static/js/utils.js"></script>
+    <script type="text/javascript" src="../webview/static/js/acc_table.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="path-api hidden" th:text="${UrlPath}"/>
+<div class="relation-trans-id hidden" th:text="${TransId}"/>
+
+
+<div style="position: absolute; right: 2%; top: 3%; display: flex;">
+    <div id="content-btn-login">
+    </div>
+
+    <!--<img id="img-web-logo" width="220" height="277" src="../ewallet-webview/static/img/viettel_log.png"-->
+    <!--alt="The Scream"-->
+    <!--style="display: none">-->
+    <!--<div>-->
+    <!--<canvas id="canvas-web-logo" width="100" height="100"></canvas>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<canvas id="vietnam-flag" width="100" height="60" style="margin-top: 20%; margin-left: 10%;"></canvas>-->
+    <!--</div>-->
+</div>
+<div>
+    <div id="modal-login" class="modal">
+    </div>
+
+    <div id="modal-detail" class="modal">
+    </div>
+
+    <div id="modal-success" class="modal">
+    </div>
+
+    <div id="modal-logout-success" class="modal">
+    </div>
+
+    <div id="modal-fail" class="modal">
+    </div>
+
+    <div id="modal-help" class="modal">
+    </div>
+</div>
+
+<div class="title-pane">
+    <div class="left" style="display: list-item ;padding: 1%;">
+        <button type="button" class="btn" onclick="menuClick(this)" value="menu"><i class="fa fa-home"></i></button>
+    </div>
+    <div class="right" style="width: 95%; text-align: center">
+        <h1 class="text">Acc table</h1>
+    </div>
+</div>
+
+
+<div class="content-pane">
+    <div class="sub-content-pane line-02" style="padding: 1%">
+
+        <div class="table_content" style="position:relative ; z-index:3; width: 100% ; ">
+
+            <div class="content-trans-accounting">
+                <p class="text">Trans Accounting : </p>
+                <div class="content-table">
+                    <table class="table-value" style="width:100%"></table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

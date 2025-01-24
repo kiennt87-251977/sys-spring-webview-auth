@@ -1,0 +1,201 @@
+body {
+    /*background-color: azure;*/
+}
+
+h1 {
+    color: #00008c;
+    size: A3;
+}
+
+p.text {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+p.value {
+    color: black;
+    font-size: large;
+    margin-left: 1%;
+    font-style: italic;
+    /*padding-top: 3px;*/
+}
+
+.status {
+    /*border: 1px dotted black;*/
+}
+
+.search .input-search {
+    border-radius: 5px;
+    border-color: #00c11b;
+    border-width: 1px;
+    /*height: 20%;*/
+    font-size: x-large;
+    padding: 3%;
+}
+
+.search-request .input-search {
+    border-width: 2px;
+    border-color: #7f247c;
+}
+
+.sub-content-pane .left, .sub-content-pane .center, .sub-content-pane .right {
+    margin-left: 2%;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+td, th {
+    text-align: center;
+    border: 1px solid #58b563;
+    border-radius: 4px;
+}
+
+th {
+    background-color: cadetblue;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+.open-win {
+    display: block;
+}
+
+.close-win {
+    display: none;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.visited {
+    visibility: visible;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.button {
+    background-color: #af4a2b;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-color-active {
+    background-color: #4CAF50;
+}
+
+.btn-color-deactive {
+    background-color: #af4a2b;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    /*background-color: RoyalBlue;*/
+    opacity: 0.6;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+option {
+    cursor: pointer;
+}
+
+.value {
+    color: black;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+.input-radio-select {
+    margin: 2% !important;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6383ab;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #454f67;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.content-pane {
+    list-style: none;
+    padding-top: 5%
+}
+
+.title-pane {
+    display: flex;
+}
+
+.tr-table {
+    /*cursor: pointer;*/
+}
+
+.tr-table-pointer {
+    cursor: pointer;
+}
+
+.tr-table:hover {
+    background-color: #7494b9;
+}
+
+.tr-impaire {
+    background-color: rgba(57, 79, 114, 0.14);
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.input-date {
+    border-radius: 5px;
+    border-color: #00c11b;
+    border-width: 1px;
+    padding: 3%;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.display-flex {
+    display: flex;
+}
